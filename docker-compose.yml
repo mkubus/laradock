@@ -1145,8 +1145,8 @@ services:
       environment:
         - APP_CODE_PATH_CONTAINER=${APP_CODE_PATH_CONTAINER}
         - TZ=${WORKSPACE_TIMEZONE}
-        - PGID=1000
-        - PUID=1000
+        - PGID=1001
+        - PUID=1001
       volumes:
         - /etc/localtime:/etc/localtime:ro
         - ${APP_CODE_PATH_HOST}:${APP_CODE_PATH_CONTAINER}
@@ -1163,8 +1163,8 @@ services:
       environment:
         - DOCUMENT_ROOT=${APP_CODE_PATH_CONTAINER}
         - TZ=${WORKSPACE_TIMEZONE}
-        - PGID=1000
-        - PUID=1000
+        - PGID=1001
+        - PUID=1001
       volumes:
         - /etc/localtime:/etc/localtime:ro
         - ${APP_CODE_PATH_HOST}:/home/laradock/ICEcoder/dev

@@ -32,9 +32,9 @@ USER root
 ###########################################################################
 
 # Add a non-root user to prevent files being created with root permissions on host machine.
-ARG PUID=1000
+ARG PUID=1001
 ENV PUID ${PUID}
-ARG PGID=1000
+ARG PGID=1001
 ENV PGID ${PGID}
 
 # always run apt update when start and after add new source list, then clean up at end.

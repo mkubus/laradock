@@ -27,9 +27,9 @@ RUN docker-php-ext-install mysqli mbstring pdo pdo_mysql tokenizer xml pcntl
 RUN pecl channel-update pecl.php.net && pecl install memcached mcrypt-1.0.1 && docker-php-ext-enable memcached
 
 # Add a non-root user:
-ARG PUID=1000
+ARG PUID=1001
 ENV PUID ${PUID}
-ARG PGID=1000
+ARG PGID=1001
 ENV PGID ${PGID}
 
 RUN addgroup -g ${PGID} laradock && \
